@@ -1,0 +1,37 @@
+.menu-search input {
+    color: white;
+    background-color: #262626;
+    border: 0;
+    border-radius: 10px;
+    width: 24vw;
+    min-width: 200px;
+    padding: 0 1rem;
+    height: 35px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .menu-search input:hover {
+    background-color: #2e2e2e;
+  }
+  
+  .menu-search input:focus {
+    outline: none;
+    background-color: #2e2e2e;
+    caret-color: white;
+  }
+  
+  .menu-search input::placeholder {
+    color: #686868;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .menu-search-icon {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 630px) {
+    .menu-search input {
+      min-width: 150px;
+    }
+  }

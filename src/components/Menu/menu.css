@@ -1,0 +1,67 @@
+@import url('../Search/search.css');
+
+.Menu {
+  color: white;
+  padding: 1rem 3rem 3rem 3rem;
+}
+
+.Menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.dp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.icons-name {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.icons-name h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.menu-left {
+  gap: 6rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .menu-right .text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .menu-logo .text {
+    display: none;
+  }
+
+  .menu-left {
+    gap: 10%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu-right .cart-text {
+    display: none;
+  }
+  .menu-right {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+
+  .Menu {
+    padding: 1rem 1rem;
+  }
+
+}

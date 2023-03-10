@@ -1,0 +1,81 @@
+
+.Card {
+  box-shadow: 0px 5px 5px rgb(10, 10, 10);
+  border-radius: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.Card:hover {
+  transform: scale(1.03);
+}
+
+.Card a {
+  color: white;
+  text-decoration: none;
+}
+
+.game {
+  height: auto;
+}
+
+.game-image {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.game-platforms {
+  display: flex;
+}
+
+.game-platform {
+  padding-right: 0.8rem;
+}
+
+.game-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1f1f1f;
+  border-radius: 0 0 1rem 1rem;
+  height: 100px;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.game-name {
+  font-size: 1.4rem;
+}
+
+.game-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-rating {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 4px;
+  padding-right: 5px;
+  gap: 3px;
+}
+
+#game-star {
+  display: flex;
+  align-items: center;
+}
+
+.game-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-like {
+  padding-right: 1rem;
+}

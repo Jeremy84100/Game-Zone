@@ -1,0 +1,52 @@
+.Sort {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.sort {
+    display: flex;
+    gap: 1rem;
+}
+
+.sort div {
+    display: flex;
+    background-color: rgb(34, 34, 34);
+    padding: 0.4rem 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.sort div:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+.sort div h3 {
+    display: flex;
+    align-items: center;
+}
+
+.Display div h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.Filter {
+    font-size: 0.8rem;
+}
+
+#filter-genre {
+    margin-left: 5px;
+    font-size: 1rem;
+    font-weight: 1000;
+}
+
+@media screen and (max-width: 1025px) {
+    .Display{
+        display: none;
+    }
+    
+}
+

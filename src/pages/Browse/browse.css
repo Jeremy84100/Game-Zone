@@ -1,0 +1,15 @@
+@import url("../../components/GameList/gamelist.css");
+@import url("../../components/Sort/sort.css");
+@import url("../../components/Filters/filters.css");
+
+.Browse {
+  padding-right: 3rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 630px) {
+  .Browse {
+    padding-right: 1rem;
+  }
+}

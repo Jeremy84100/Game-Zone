@@ -1,0 +1,22 @@
+@import url("../../components/Card/card.css");
+
+.GameList a {
+  color: white;
+  text-decoration: none;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+  grid-gap: 26px;
+  margin-top: 2rem;
+}
+
+.rows {
+  display: grid;
+  grid-template-columns: repeat(1, 4fr);
+  grid-gap: 26px;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
