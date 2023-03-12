@@ -1,22 +1,24 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 
 import Sort from "../../components/Sort/Sort";
 import Filters from "../../components/Filters/Filters";
 import GameList from "../../components/GameList/GameList";
 
-const Browse = ({ games }) => {
+const Browse = (props) => {
   const [selectedGenre, setSelectedGenre] = useState("");
   const [gamesByGenre, setGamesByGenre] = useState([]);
   const [layout, setLayout] = useState("cols");
 
+  const { games } = props;
+
   const handleFilter = async (genre) => {
-    let url = `https://api.rawg.io/api/games?page_size=50&key=bf3dbf55bea64193b8b2567b9df19e1e`;
-    if (genre !== "") {
-      url += `&genres=${genre}`;
-    }
-    const response = await axios.get(url);
-    setGamesByGenre(response.data.results);
+    const url = `https://api.rawg.io/api/games?page_size=50&key=bf3dbf55bea64193b8b2567b9df19e1e${genre !== "" ? `&genres=${genre}` : ""}`;
+    
+    const response = await fetch(url);
+    const data = await response.json();
+    const gamesForGenre = data.results;
+    
+    setGamesByGenre(gamesForGenre);
     setSelectedGenre(genre);
   };
 
