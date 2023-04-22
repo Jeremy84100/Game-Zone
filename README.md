@@ -23,10 +23,6 @@ To install Game-Zone, you can follow these steps:
 - [`react-router-dom`](https://reactrouter.com/web/guides/quick-start): a routing library for React applications.
 - [`Vercel`](https://vercel.com/): a cloud deployment platform for web projects.
 
-## License
-
-Game-Zone is licensed under the MIT License. You can learn more by reading the `LICENSE` file in the root directory of this project.
-
 ## Author
 
 Game-Zone was created by BOURRET Jérémy and is available on https://github.com/Jeremy84100/Game-Zone.
