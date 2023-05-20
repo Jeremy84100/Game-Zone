@@ -13,7 +13,7 @@ Game-Zone is a web-based game search platform that provides detailed information
 To install Game-Zone, you can follow these steps:
 
 1. Clone the project using the following command: `git clone https://github.com/Jeremy84100/Game-Zone.git`
-2. Install the dependencies using the following command: `npm install``
+2. Install the dependencies using the following command: `npm install`
 3. Start the application using the following command: `npm start`
 4. Open your browser and go to the following URL: `http://localhost:3000`
 
